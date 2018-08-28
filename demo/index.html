@@ -7,7 +7,12 @@
     <title>beaker-broker demo</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-
+    <script>
+      /* this script must run before Polymer is imported */
+      window.Polymer = {
+        dom: 'shady'
+      };
+    </script>
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../beaker-broker.html">
